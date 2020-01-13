@@ -8,20 +8,20 @@ Jan 14, 2020
 
 **Features**
 
-* Support the deeplink+. The SDK is able to manage the app-targeting campaigns. 
+* Support the deeplink+. The SDK is able to manage the app-targeting campaigns.
 * Track [render impressions](info/ios-sdk-impression-tracking.md). The SDK tracks impressions according to the MRC Guidelines.
 * Support CCPA.
 * Update the Transparency and Consent Framework (GDPR) to TCF v2.
 * Support iOS 13.
-* Support Vertical Video ads. 
+* Support Vertical Video ads.
 * Support MoPub’s custom AdapterConfiguration.
 
 **Changes and Improvements**
 
 * The configuration settings for ad requests was changed. The access to the sensitive fields was limited to prevent inappropriate bidding.
-* The behaviour between several active ad views was improved. Now you can place different ad units on the same view.
+* The behavior between several active ad views was improved. Now you can place different ad units on the same view.
 * ⚠️ The methods in some [protocols](ios-sdk-delegates.md) were renamed to support the managing of different ad views by single controller.
-* Improvements and corrections for the logging system. 
+* Improvements and corrections for the logging system.
 
 
 Version 4.10
@@ -32,13 +32,13 @@ July 30, 2019
 
 **Features**
 
-* SSL connection for all ad requests. In versions 4.10 and later, OpenX SDK performs only secure ad requests. 
+* SSL connection for all ad requests. In versions 4.10 and later, OpenX SDK performs only secure ad requests.
 * 300x250 Video ad format. You can integrate the video ads into UI.
 
 **Changes and Improvements**
 
 * Changed initialization of video ad classes: Provide the domain and ad unit ID values instead of vastURL.
-* Improved the UI/UX for Interstitial ads. 
+* Improved the UI/UX for Interstitial ads.
 * Updates to the OMSDK library and improve support.
 * Improvements and fixes for MRAID  
 * Corrections for precaching of video ads
@@ -72,7 +72,7 @@ June 6, 2019
 **Major bug fixes:**
 
 * For MoPub Adapter, the clickthrough appears after the user taps on the banner ad.
-* Invalid lat/lon degree precision sent in ad requests has been corrected. 
+* Invalid lat/lon degree precision sent in ad requests has been corrected.
 
 Version 4.8.1
 -------------
@@ -133,7 +133,7 @@ This version of the OpenX Mobile iOS SDK includes:
 -   Upgrade to Xcode 9.3.
 -   Bug fixes.
 
-Version 4.6.1 
+Version 4.6.1
 -------------
 
 January 5, 2018

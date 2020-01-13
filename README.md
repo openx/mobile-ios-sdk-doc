@@ -9,7 +9,7 @@ increase revenue through mobile advertising.
 
 For requirements and integration overview, see [Getting Started](info/ios-sdk-getting-started.md).
 
-The current SDK version is **4.11**. 
+The current SDK version is **4.11**.
 Go to [the release notes](info/ios-sdk-release-notes.md) for all SDK versions.
 
 Quick download links:
@@ -31,13 +31,13 @@ The following are some of the key capabilities of the iOS SDK.
     -   Rich media and MRAID 2.0 support
     -   [Video Interstitial](info/ios-sdk-video-interstitial-integration.md)
     -   [Flex Ads](info/ios-sdk-flex-ads.md)
-    -   [Opt-in Video](info/ios-sdk-video-optin-integration.md). 
+    -   [Opt-in Video](info/ios-sdk-video-optin-integration.md).
     -   [300x250 Video](info/ios-sdk-video-300x250.md).
--   **Support Open Measurement**. The OpenX SDK is certified with IAB and MOAT. 
+-   **Support Open Measurement**. The OpenX SDK is certified with IAB and MOAT.
 -   **Direct SDK integration**. Allows you to pass first-party app data,
     user data, device data, and location data.  
 -   **Privacy Regulation Compliance**. The OpenX SDK implements the support of **GDPR**, **CCPA**, **COPPA** requirements according to the IAB specifications.
--   **App targeting campaigns**. Regarding to the [support of deeplink+](info/ios-sdk-deeplinkplus.md) SDK is able to manage the ads with premium UX for retargenting campaigns.
+-   **App targeting campaigns**. Regarding to the [support of deeplink+](info/ios-sdk-deeplinkplus.md) SDK is able to manage the ads with premium UX for retargeting campaigns.
 -   ❗ **Customization**. Permits the use of [custom ad parameters](info/ios-sdk-parameters.md) to increase the chance to win an impression, and allows to improve UX of the ad views.
 -   **Quality controls and safeguards:**
     -   Proactive creative scanner and smart logic that minimizes

@@ -28,7 +28,7 @@ To manually integrate the SDK with your Xcode project:
 ATS support
 --------------------
 
-For versions 4.9 and later, the OpenX Mobile iOS SDK makes secure ad requests (HTTPS) by default. owever, many network calls related to the ad are not secure (HTTP), such as those related to resources and events.
+For versions 4.9 and later, the OpenX Mobile iOS SDK makes secure ad requests (HTTPS) by default. hHowever, many network calls related to the ad are not secure (HTTP), such as those related to resources and events.
 
 To support non-secure requests, set the `NSAllowsArbitraryLoads` key to `YES` in the app\'s Info.plist file. This allows non-secure requests in iOS 9 or later from the app directly as well as web views.
 
@@ -80,15 +80,15 @@ To enable pre-caching, integrate [video interstitial ads](ios-sdk-video-intersti
 ``` swift
 // Create a container for initialization with custom options.
 let options = OXMSDKInitializationOptions()
-        
+
 // Provide a list of ad configurations to preload.
 let adConfig = AdConfiguration()
 adConfig.oxmAdUnitIdentifierType = .vast
 adConfig.domain = "mobile-d.openx.net"
 adConfig.auid = "540396661"
-        
+
 options.preloadVastConfigurations = [adConfig]
-        
+
 // Start SDK Initialization with custom options.
 // OpenX SDK will initiate the loading of ads for provided vast tags immediately.
 OXMSDKConfiguration.initializeSDK(with:options)
@@ -99,15 +99,15 @@ OXMSDKConfiguration.initializeSDK(with:options)
 ``` objc
 // Create a container for initialization with custom options.
 OXMSDKInitializationOptions* options = [OXMSDKInitializationOptions new];
-    
+
 // Provide a list of ad configurations to preload.
 OXMAdConfiguration *adConfig = [OXMAdConfiguration new];
 adConfig.oxmAdUnitIdentifierType = OXMAdUnitIdentifierTypeVast;
 adConfig.domain = @"mobile-d.openx.net";
 adConfig.auid = @"540396661";
-    
+
 options.preloadVastConfigurations = @[adConfig];
-    
+
 // Start SDK Initialization with custom options.
 // OpenX SDK will initiate the loading of ads for provided vast tags immediately.
 [OXMSDKConfiguration initializeSDKWithOptions:options];
