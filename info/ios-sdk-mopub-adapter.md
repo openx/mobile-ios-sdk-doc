@@ -9,7 +9,7 @@ To help you quickly build your adapter, OpenX provides sample adapter
 code for banner, interstitial, video interstitial, and opt-in (rewarded)
 video.
 
-[Download OpenX MoPub Adapter](https://ssl-i.cdn.openx.com/sdks/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.10.0.zip)
+[Download OpenX MoPub Adapter](https://ssl-i.cdn.openx.com/sdks/release-4.10.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.10.0.zip)
 
  The sample adapters are built according to [MoPub's instructions](https://www.mopub.com/resources/docs/mopub-network-mediation/writing-custom-events-for-non-supported-networks-ios/).
 You will need to customize the adapters to meet your needs as instructed
@@ -17,7 +17,9 @@ below.
 
 1. Add `OpenXCoreSDK.framework` to your project.
 2. Add the MoPub SDK to your project according to [MoPub's instructions](https://www.mopub.com/resources/docs/ios-sdk-integration/ios-getting-started/).
+3. Add the `OXMMoPubAdapterConfiguration` class to your project
 3. Add the OpenX MoPub adapters to your project:
+    -   `OXMMoPubAdapterConfiguration.h` and `OXMMoPubAdapterConfiguration.m`
     -   `OXMMoPubBannerAdapter.h` and `OXMMoPubBannerAdapter.m`
     -   `OXMMoPubInterstitialAdapter.h` and `OXMMoPubInterstitialAdapter.m` 
     -   `OXMMoPubVideoInterstitialAdapter.h` and `OXMMoPubVideoInterstitialAdapter.m`
@@ -61,3 +63,43 @@ below.
 6. Select the app and ad unit for the line item to target.
 7. If using multiple adapters (banner, interstitial, video interstitial, and/or opt-in video), create a separate line item for each adapter.
 8. [Test](ios-sdk-self-test.md) your implementation and notify OpenX to enable live traffic.
+
+
+Enabling Video Pre-Caching
+========
+To enable the video pre-chaching, add OXMMoPubAdapterConfiguration to your project and pass the JSON-based ad configurations string to the `MPMoPubConfiguration`:
+
+```json
+{
+  "precache_configuration":
+  [
+    {
+      "domain":"YOUR_DOMAIN",
+      "auid":"YOUR_AUID",
+      "pgid": "YOUR_PGID"
+    }
+  ]
+}
+```
+
+The code sample:
+
+``` swift
+let mopubConfig = MPMoPubConfiguration(adUnitIdForAppInitialization: "")
+mopubConfig.loggingLevel = .info
+mopubConfig.additionalNetworks = [OXMMoPubAdapterConfiguration.self]
+        
+let preloadConfig = """
+{
+  "precache_configuration":
+  [
+    {
+      "domain":mobile-d.openx.net",
+      "auid":"540397906",
+    }
+  ]
+}
+"""
+mopubConfig.setNetwork([OXM_MOPUB_INITIALIZATION_OPTIONS_KEY: preloadConfig], forMediationAdapter: "OXMMoPubAdapterConfiguration")
+```
+

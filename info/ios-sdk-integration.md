@@ -16,10 +16,7 @@ To manually integrate the SDK with your Xcode project:
 5.  Verify that the **Copy items into destination's group folder
     option** is selected and click **OK**.
 6.  Open your project's target settings.
-7.  Remove the frameworks from **Linked Frameworks and Libraries**.
-    Then, drag the SDK frameworks into **Embedded Binaries**. 
-    **Note:** The frameworks should appear only once in the **Linked Frameworks
-    and Libraries** and only once in **Embedded Binaries**.
+7.  Verify in the **Frameworks, Libraries and Embedded content** section of **General** tab that **OpenXSDKCore.framework**'s Embed mode is **Embed & Sign**.
 8.  Select the **Build Settings** tab.
 9.  In the **Deployment Info** section of the **General** tab, set
     **Deployment Target** for your app to **8.0** or later.
@@ -39,6 +36,20 @@ Initializing the SDK
 -------------------------------------------------------
 
 Make sure to initialize the OpenX SDK early on in your app, as this ensures the SDK has more time for data enrichment, and will ultimately help with monetization.
+
+As the first step import the OpenX framework.
+
+**Swift**
+
+```
+import OpenXSDKCore
+```
+
+**Objective-C**
+
+```
+#import <OpenXSDKCore/OpenXSDKCore.h>
+```
 
 Initialize the SDK using [`OXMSDKConfiguration`](ios-sdkparameters.md#oxmsdkconfiguration). You can initialize without video pre-caching, as in the following examples:
 

@@ -1,6 +1,29 @@
 OpenX Mobile iOS SDK Release notes
 ==================================
 
+Version 4.11
+-----------
+
+Jan 14, 2020
+
+**Features**
+
+* Support the deeplink+. The SDK is able to manage the app-targeting campaigns. 
+* Track [render impressions](info/ios-sdk-impression-tracking.md). The SDK tracks impressions according to the MRC Guidelines.
+* Support CCPA.
+* Update the Transparency and Consent Framework (GDPR) to TCF v2.
+* Support iOS 13.
+* Support Vertical Video ads. 
+* Support MoPub’s custom AdapterConfiguration.
+
+**Changes and Improvements**
+
+* The configuration settings for ad requests was changed. The access to the sensitive fields was limited to prevent inappropriate bidding.
+* The behaviour between several active ad views was improved. Now you can place different ad units on the same view.
+* ⚠️ The methods in some [protocols](ios-sdk-delegates.md) were renamed to support the managing of different ad views by single controller.
+* Improvements and corrections for the logging system. 
+
+
 Version 4.10
 -----------
 

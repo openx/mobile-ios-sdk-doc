@@ -57,8 +57,8 @@ override func viewDidLoad() {
      
     self.interstitialController = OXMInterstitialController();
     self.interstitialController.adUnitIdentifierType = .vast
-    self.interstitialController.domain = "pub-d.openx.net"
-    self.interstitialController.adUnitId = "123456789"
+    self.interstitialController.domain = "mobile-d.openx.net"
+    self.interstitialController.adUnitId = "540851203"
     self.interstitialController.delegate = self
     self.interstitialController.autoDisplayOnLoad = false
     	
@@ -67,7 +67,11 @@ override func viewDidLoad() {
                 
 // MARK: - OXMInterstitialControllerDelegate
 
-func adDidLoad(_ interstitialController: OXMInterstitialController) {
+func viewControllerForModalPresentation() -> UIViewController {
+    return self
+}
+
+func interstitialDidLoad(_ interstitialController: OXMInterstitialController) {
     // Show the interstitial.
     self.interstitialController.show()           
 }
@@ -82,8 +86,8 @@ Objective-C code sample
         
     self.interstitialController = [[OXMInterstitialController alloc] init];
     self.interstitialController.adUnitIdentifierType = AdUnitIdentifierTypeVast;
-    self.interstitialController.domain = @"pub-d.openx.net"
-    self.interstitialController.adUnitId = @"123456789"
+    self.interstitialController.domain = @"mobile-d.openx.net"
+    self.interstitialController.adUnitId = @"540851203"
     self.interstitialController.delegate = self;
     self.interstitialController.autoDisplayOnLoad = NO;
         
@@ -92,7 +96,11 @@ Objective-C code sample
 
 #pragma mark - OXMInterstitialControllerDelegate
 
-- (void) adDidLoad:(OXMInterstitialController *)interstitialController {
+- (UIViewController *)viewControllerForModalPresentation {
+    return self;
+}
+
+- (void) interstitialDidLoad:(OXMInterstitialController *)interstitialController {
     // Show the interstitial.
     [self.interstitialController show];
 }

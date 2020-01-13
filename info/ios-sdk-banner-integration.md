@@ -42,8 +42,8 @@ class MyViewController : UIViewController, OXMBannerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-        self.oxmBannerView.adUnitId = "123456789"
-        self.oxmBannerView.domain = "pub-d.openx.net"
+        self.oxmBannerView.adUnitId = "540848492"
+        self.oxmBannerView.domain = "mobile-d.openx.net"
         self.oxmBannerView.delegate = self
         self.oxmBannerView.flexAdSize = OXMFlexAdSize.Banner_320x50
         self.view.addSubview(oxmBannerView);
@@ -54,48 +54,48 @@ class MyViewController : UIViewController, OXMBannerViewDelegate {
     // Called every time an ad has loaded and is ready for display. If you
     // experience an ad quality issue, you can identify the ad by the
     // transactionId in the adDetails object.
-    func adDidLoad(oxmBannerView:OXMBannerView, adDetails:OXMAdDetails) {
+    func bannerDidLoad(oxmBannerView:OXMBannerView, adDetails:OXMAdDetails) {
         NSLog("OpenX ad loaded: \(oxmBannerView) Transaction ID = \(adDetails.transactionId)")
     }
      
     // Called whenever the load process fails to produce a viable ad.
-    func adDidFailToLoad(oxmBannerView:OXMBannerView, error:Error) {
+    func bannerDidFailToLoad(oxmBannerView:OXMBannerView, error:Error) {
         NSLog("adDidFailToLoad: \(oxmBannerView), error: \(error)")
     }
      
     // Called after an ad has rendered to the device's screen.
-    func adDidDisplay(oxmBannerView:OXMBannerView) {
+    func bannerDidDisplay(oxmBannerView:OXMBannerView) {
         NSLog("adDidDisplay: \(oxmBannerView)")
     }
      
     // Called once an ad has finished displaying all of its creatives.
-    func adDidComplete(oxmBannerView:OXMBannerView) {
+    func bannerDidComplete(oxmBannerView:OXMBannerView) {
         NSLog("adDidComplete: \(oxmBannerView)")
     }
      
     // Called when the user clicks on an ad and a click-through is
     // about to occur.
-    func adWasClicked(oxmBannerView:OXMBannerView) {
+    func bannerWasClicked(oxmBannerView:OXMBannerView) {
         NSLog("adWasClicked: \(oxmBannerView)")
     }
      
     // Called when the user closes a click-through.
-    func adClickthroughDidClose(oxmBannerView:OXMBannerView) {
+    func bannerClickthroughDidClose(oxmBannerView:OXMBannerView) {
         NSLog("adClickthroughDidClose: \(oxmBannerView)")
     }
      
     // Called when an MRAID ad expands.
-    func adDidExpand(oxmBannerView:OXMBannerView) {
+    func bannerDidExpand(oxmBannerView:OXMBannerView) {
         NSLog("adDidExpand: \(oxmBannerView)")
     }
      
     // Called when an MRAID ad collapses.
-    func adDidCollapse(oxmBannerView:OXMBannerView) {
+    func bannerDidCollapse(oxmBannerView:OXMBannerView) {
         NSLog("adDidCollapse: \(oxmBannerView)")
     }
                                     
     // Called when the ad leaves the app.
-    func adDidLeaveApplication(oxmBannerView:OXMBannerView) {
+    func bannerDidLeaveApplication(oxmBannerView:OXMBannerView) {
         NSLog("adDidLeaveApplication: \(oxmBannerView)")
     }
 }
@@ -131,8 +131,8 @@ Objective-C code sample
     [super viewDidLoad];
  
     self.oxmBannerView = [[OXMBannerView alloc] init];
-    self.oxmBannerView.adUnitId = @"123456789";
-    self.oxmBannerView.domain = @"pub-d.openx.net";
+    self.oxmBannerView.adUnitId = @"540848492";
+    self.oxmBannerView.domain = @"mobile-d.openx.net";
     self.oxmBannerView.delegate = self;
     [self.oxmBannerView load];
 }
@@ -141,42 +141,42 @@ Objective-C code sample
 // Called every time an ad has loaded and is ready for display. If you
 // experience an ad quality issue, you can identify the ad by the transactionId
 // in the adDetails object.
-- (void)adDidLoad:(nonnull OXMBannerView *)oxmBannerView adDetails:(nonnull OXMAdDetails *)adDetails {
+- (void)bannerDidLoad:(nonnull OXMBannerView *)oxmBannerView adDetails:(nonnull OXMAdDetails *)adDetails {
     NSLog(@"Openx ad loaded: %@ with transaction id: %@", oxmBannerView, adDetails.transactionId);
 }
  
 // Called whenever the load process fails to produce a viable ad.
-- (void)adDidFailToLoad:(nonnull OXMBannerView *)oxmBannerView error:(nonnull NSError *)error {
+- (void)bannerDidFailToLoad:(nonnull OXMBannerView *)oxmBannerView error:(nonnull NSError *)error {
     NSLog(@"adDidFailToLoad: %@, error: %@", oxmBannerView, error);
 }
                                 
 // Called after an ad has rendered to the device's screen.
-- (void)adDidDisplay:(nonnull OXMBannerView *)oxmBannerView {
+- (void)bannerDidDisplay:(nonnull OXMBannerView *)oxmBannerView {
     NSLog(@"adDidDisplay: %@", oxmBannerView);
 }
  
 // Called once an ad has finished displaying all of its creatives.
-- (void)adDidComplete:(nonnull OXMBannerView *)oxmBannerView {
+- (void)bannerDidComplete:(nonnull OXMBannerView *)oxmBannerView {
     NSLog(@"adDidComplete: %@", oxmBannerView);
 }
  
 // Called when the user clicks on an ad and a click-through is about to occur.
-- (void)adWasClicked:(nonnull OXMBannerView *)oxmBannerView {
+- (void)bannerWasClicked:(nonnull OXMBannerView *)oxmBannerView {
     NSLog(@"adWasClicked: %@", oxmBannerView);
 }
  
 // Called when the user closes a click-through.
-- (void)adClickthroughDidClose:(nonnull OXMBannerView *)oxmBannerView {
+- (void)bannerClickthroughDidClose:(nonnull OXMBannerView *)oxmBannerView {
     NSLog(@"adClickthroughDidClose: %@", oxmBannerView);
 }
  
 // Called when an MRAID ad expands.
 - (void)adDidExpand:(OXMBannerView * _Nonnull)oxmBannerView {
-NSLog(@"adDidExpand: %@", oxmBannerView);
+NSLog(@"bannerDidExpand: %@", oxmBannerView);
 }
  
 // Called when an MRAID ad collapses.
-- (void)adDidCollapse:(OXMBannerView * _Nonnull)oxmBannerView {
+- (void)bannerDidCollapse:(OXMBannerView * _Nonnull)oxmBannerView {
     NSLog(@"adDidCollapse: %@", oxmBannerView);
 }
 @end
