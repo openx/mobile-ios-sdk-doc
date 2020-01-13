@@ -16,7 +16,7 @@ This rule is applied to all tracking pixels, which managed by OpenX SDK - displa
 
 ## MRAID
 
-The OpenX SDK supports the MRAID 2.0. SDK broadcasts the **mraid.viewableChange()** event when the ad becomes rendered. It means that for proper impression tracking with MRAID the creative's code for tracking impression must depend on **mraid.isViewable()**. For example: 
+The OpenX SDK supports the MRAID 2.0. SDK broadcasts the **`mraid.viewableChange()`** event when the ad becomes rendered. It means that for proper impression tracking with MRAID the creative's code for tracking impression must depend on **`mraid.isViewable()`**. For example:
 
 
 ``` javascript

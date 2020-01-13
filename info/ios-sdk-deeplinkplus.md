@@ -69,7 +69,7 @@ The SDK will process this scheme regarding to the standard.
 
 ## Demo
 
-To inspect the behavior build, run the OpenX Demo Application on the real device and try the following examples:
+To inspect the behavior build and run OpenX Demo Application on the real device and try the examples:
 
 - **Banner with deeplink+**
 - **Video Interstitial with deeplink+**
