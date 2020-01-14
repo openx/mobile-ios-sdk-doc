@@ -4,8 +4,8 @@ Getting started
 To get started with the OpenX Mobile iOS SDK, make sure you meet the
 following requirements:
 
--   iOS versions later than 8 for your deployment target. Users on these versions will get ads. Beta versions are not supported.
--   Xcode versions 9 and later. Beta versions are not supported.
+-   iOS version 8 or newer for your deployment target. Users on these versions will get ads. Beta versions are not supported.
+-   Xcode versions 9 or later. Beta versions are not supported.
 -   For display ads, the ad unit ID and OpenX delivery domain provided by OpenX.
 -   For video ads, including opt-in and 300x250 video, the ad unit ID and OpenX delivery domain provided by OpenX. 
 
