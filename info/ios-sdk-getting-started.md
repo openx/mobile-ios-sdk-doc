@@ -48,14 +48,14 @@ Integration process overview
 
 To integrate the OpenX Mobile iOS SDK, complete the following steps. To
 explore the provided sample implementations
-[download](https://ssl-i.cdn.openx.com/sdks/release-4.10.0/OpenX_Mobile_SDK_iOS_4.10.0.zip)
+[download](http://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_4.11.0.zip)
 the SDK and [launch the demo app](ios-sdk-demo-app.md).
 
 > **Tip:** You may use these steps as a high-level checklist to ensure a successful
 integration.
 
 1.  Make sure you meet the above [requirements](#getting-started).
-2.  [Download](https://ssl-i.cdn.openx.com/sdks/release-4.10.0/OpenX_Mobile_SDK_iOS_4.10.0.zip)
+2.  [Download](http://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_4.11.0.zip)
     the [OpenX Mobile iOS SDK zip file](#sdk-zip-file-contents).
 3.  [Integrate the SDK with your app](ios-sdk-integration.md) and
     [initialize the SDK](ios-sdk-integration.md#initializing-the-sdk-for-video-pre-caching).

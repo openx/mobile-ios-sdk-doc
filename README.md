@@ -14,9 +14,9 @@ Go to [the release notes](info/ios-sdk-release-notes.md) for all SDK versions.
 
 Quick download links:
 
-- [OpenX iOS SDK and Demo Applications](https://ssl-i.cdn.openx.com/sdks/release-4.10.0/OpenX_Mobile_SDK_iOS_4.10.0.zip)
-- [MoPub Adapter and Demo Applications](https://ssl-i.cdn.openx.com/sdks/release-4.10.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.10.0.zip)
-- [AdMob Adapter and Demo Applications](https://ssl-i.cdn.openx.com/sdks/release-4.10.0/OpenX_Mobile_SDK_iOS_AdMob_Adapter_Demo_4.10.0.zip)
+- [OpenX iOS SDK and Demo Applications](http://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_4.11.0.zip)
+- [MoPub Adapter and Demo Applications](http://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.11.0.zip)
+- [AdMob Adapter and Demo Applications](http://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_AdMob_Adapter_Demo_4.11.0.zip)
 
 ## iOS SDK Overview
 
