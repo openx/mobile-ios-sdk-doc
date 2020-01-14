@@ -28,7 +28,7 @@ To manually integrate the SDK with your Xcode project:
 ATS support
 --------------------
 
-For versions 4.9 and later, the OpenX Mobile iOS SDK makes secure ad requests (HTTPS) by default. hHowever, many network calls related to the ad are not secure (HTTP), such as those related to resources and events.
+For versions 4.9 and later, the OpenX Mobile iOS SDK makes secure ad requests (HTTPS) by default. However, many network calls related to the ad are not secure (HTTP), such as those related to resources and events.
 
 To support non-secure requests, set the `NSAllowsArbitraryLoads` key to `YES` in the app\'s Info.plist file. This allows non-secure requests in iOS 9 or later from the app directly as well as web views.
 
