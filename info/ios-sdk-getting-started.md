@@ -9,7 +9,7 @@ following requirements:
 -   For display ads, the ad unit ID and OpenX delivery domain provided by OpenX.
 -   For video ads, including opt-in and 300x250 video, the ad unit ID and OpenX delivery domain provided by OpenX. 
 
-For new features and upgrades, please see [Release notes](ios-sdk-release-notes.md) and [Upgrading the OpenX Mobile iOS SDK](ios-sdk-upgrading.md).
+For new features and upgrades, please see [Release notes](ios-sdk-release-notes.md).
 
 
 Ad Formats and Tips
@@ -48,7 +48,7 @@ Integration process overview
 
 To integrate the OpenX Mobile iOS SDK, complete the following steps. To
 explore the provided sample implementations
-[download](http://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_4.11.0.zip)
+[download](https://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_4.11.0.zip)
 the SDK and [launch the demo app](ios-sdk-demo-app.md).
 
 > **Tip:** You may use these steps as a high-level checklist to ensure a successful
