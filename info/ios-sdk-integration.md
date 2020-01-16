@@ -16,10 +16,7 @@ To manually integrate the SDK with your Xcode project:
 5.  Verify that the **Copy items into destination's group folder
     option** is selected and click **OK**.
 6.  Open your project's target settings.
-7.  Remove the frameworks from **Linked Frameworks and Libraries**.
-    Then, drag the SDK frameworks into **Embedded Binaries**. 
-    **Note:** The frameworks should appear only once in the **Linked Frameworks
-    and Libraries** and only once in **Embedded Binaries**.
+7.  Verify in the **Frameworks, Libraries and Embedded content** section of **General** tab that **OpenXSDKCore.framework**'s Embed mode is **Embed & Sign**.
 8.  Select the **Build Settings** tab.
 9.  In the **Deployment Info** section of the **General** tab, set
     **Deployment Target** for your app to **8.0** or later.
@@ -31,7 +28,7 @@ To manually integrate the SDK with your Xcode project:
 ATS support
 --------------------
 
-For versions 4.9 and later, the OpenX Mobile iOS SDK makes secure ad requests (HTTPS) by default. owever, many network calls related to the ad are not secure (HTTP), such as those related to resources and events.
+For versions 4.9 and later, the OpenX Mobile iOS SDK makes secure ad requests (HTTPS) by default. However, many network calls related to the ad are not secure (HTTP), such as those related to resources and events.
 
 To support non-secure requests, set the `NSAllowsArbitraryLoads` key to `YES` in the app\'s Info.plist file. This allows non-secure requests in iOS 9 or later from the app directly as well as web views.
 
@@ -39,6 +36,20 @@ Initializing the SDK
 -------------------------------------------------------
 
 Make sure to initialize the OpenX SDK early on in your app, as this ensures the SDK has more time for data enrichment, and will ultimately help with monetization.
+
+As the first step import the OpenX framework.
+
+**Swift**
+
+```
+import OpenXSDKCore
+```
+
+**Objective-C**
+
+```
+#import <OpenXSDKCore/OpenXSDKCore.h>
+```
 
 Initialize the SDK using [`OXMSDKConfiguration`](ios-sdkparameters.md#oxmsdkconfiguration). You can initialize without video pre-caching, as in the following examples:
 
@@ -69,15 +80,15 @@ To enable pre-caching, integrate [video interstitial ads](ios-sdk-video-intersti
 ``` swift
 // Create a container for initialization with custom options.
 let options = OXMSDKInitializationOptions()
-        
+
 // Provide a list of ad configurations to preload.
 let adConfig = AdConfiguration()
 adConfig.oxmAdUnitIdentifierType = .vast
 adConfig.domain = "mobile-d.openx.net"
 adConfig.auid = "540396661"
-        
+
 options.preloadVastConfigurations = [adConfig]
-        
+
 // Start SDK Initialization with custom options.
 // OpenX SDK will initiate the loading of ads for provided vast tags immediately.
 OXMSDKConfiguration.initializeSDK(with:options)
@@ -88,15 +99,15 @@ OXMSDKConfiguration.initializeSDK(with:options)
 ``` objc
 // Create a container for initialization with custom options.
 OXMSDKInitializationOptions* options = [OXMSDKInitializationOptions new];
-    
+
 // Provide a list of ad configurations to preload.
 OXMAdConfiguration *adConfig = [OXMAdConfiguration new];
 adConfig.oxmAdUnitIdentifierType = OXMAdUnitIdentifierTypeVast;
 adConfig.domain = @"mobile-d.openx.net";
 adConfig.auid = @"540396661";
-    
+
 options.preloadVastConfigurations = @[adConfig];
-    
+
 // Start SDK Initialization with custom options.
 // OpenX SDK will initiate the loading of ads for provided vast tags immediately.
 [OXMSDKConfiguration initializeSDKWithOptions:options];

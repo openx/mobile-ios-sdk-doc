@@ -59,8 +59,8 @@ Objective-C code sample
         
     self.interstitialController = [[OXMInterstitialController alloc] init];
     self.interstitialController.adUnitIdentifierType = AdUnitIdentifierTypeVast;
-    self.interstitialController.domain = @"pub-d.openx.net"
-    self.interstitialController.adUnitId = @"123456789"
+    self.interstitialController.domain = @"mobile-d.openx.net"
+    self.interstitialController.adUnitId = @"540851203"
     self.interstitialController.delegate = self;
     self.interstitialController.autoDisplayOnLoad = NO;
     	

@@ -31,18 +31,18 @@ Swift code sample
 
 ``` swift
 import OpenXSDKCore
- 
+
 class MyViewController : UIViewController, OXMInterstitialControllerDelegate{
- 
+
     @IBOutlet weak var interstitialController:OXMInterstitialController!
     @IBOutlet weak var showButton:UIButton!
- 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showButton.isEnabled = false
- 
-        self.interstitialController.adUnitId = "123456789"
-        self.interstitialController.domain = "pub-d.openx.net"
+
+        self.interstitialController.adUnitId = "538821727"
+        self.interstitialController.domain = "mobile-d.openx.net"
         self.interstitialController.delegate = self
         self.interstitialController.flexAdSize = OXMFlexAdSize.Interstitial_1024x768_480x320_300x250
         self.interstitialController.userParameters.userGender = OXMGender.male
@@ -50,64 +50,59 @@ class MyViewController : UIViewController, OXMInterstitialControllerDelegate{
         self.interstitialController.autoDisplayOnLoad = false
         self.interstitialController.load()
     }
- 
+
     // MARK: OXMInterstitialControllerDelegate
+
+    func viewControllerForModalPresentation() -> UIViewController {
+        return self
+    }
+
     // Called every time an ad has loaded and is ready for display. If you
     // experience an ad quality issue, you can identify the ad by the
     // transactionId in the adDetails object.
-    func adDidLoad(interstitialController:OXMInterstitialController, adDetails:OXMAdDetails) {
+    func interstitialDidLoad(interstitialController:OXMInterstitialController, adDetails:OXMAdDetails) {
         NSLog("OpenX ad loaded: \(interstitialController) Transaction ID = \(adDetails.transactionId)")
-                
+
         // When appropriate, show the interstitial.
-        self.interstitialController.showAsInterstitialFromRoot(self)   
+        self.interstitialController.show()   
     }
- 
+
     // Called whenever the load process fails to produce a viable ad.
-    func adDidFailToLoad(interstitialController:OXMInterstitialController, error:Error) {
+    func interstitialDidFailToLoad(interstitialController:OXMInterstitialController, error:Error) {
         NSLog("adDidFailToLoad: \(interstitialController), error: \(error)")
     }
- 
+
     // Called after an ad has rendered to the device's screen.
-    func adDidDisplay(interstitialController:OXMInterstitialController) {
+    func interstitialDidDisplay(interstitialController:OXMInterstitialController) {
         NSLog("adDidDisplay: \(interstitialController)")
     }
- 
+
     // Called once an ad has finished displaying all of its creatives.
-    func adDidComplete(interstitialController:OXMInterstitialController) {
+    func interstitialDidComplete(interstitialController:OXMInterstitialController) {
         NSLog("adDidComplete: \(interstitialController)")
     }
- 
+
     // Called when the user clicks on an ad and a click-through is
     // about to occur.
-    func adWasClicked(interstitialController:OXMInterstitialController) {
+    func interstitialWasClicked(interstitialController:OXMInterstitialController) {
         NSLog("adWasClicked: \(interstitialController)")
     }
- 
+
     // Called when the user closes a click-through.
-    func adClickthroughDidClose(interstitialController:OXMInterstitialController) {
+    func interstitialClickthroughDidClose(interstitialController:OXMInterstitialController) {
         NSLog("adClickthroughDidClose: \(interstitialController)")
     }
- 
-    // Called when an MRAID ad expands.
-    func adDidExpand(interstitialController:OXMInterstitialController) {
-        NSLog("adDidExpand: \(interstitialController)")
-    }
- 
-    // Called when an MRAID ad collapses.
-    func adDidCollapse(interstitialController:OXMInterstitialController) {
-        NSLog("adDidCollapse: \(interstitialController)")
-    }
- 
+
     // Called when the ad leaves the app.
-    func adDidLeaveApplication(interstitialController:OXMInterstitialController) {
+    func interstitialDidLeaveApplication(interstitialController:OXMInterstitialController) {
         NSLog("adDidLeaveApplication: \(interstitialController)")
     }
- 
+
     // Called when a displayed interstitial, closes by user.
-    func adInterstitialDidClose(interstitialController:OXMInterstitialController) {
+    func interstitialDidClose(interstitialController:OXMInterstitialController) {
         NSLog("adInterstitialDidClose: \(interstitialController)")
     }
- 
+
 }
 ```
 
@@ -120,12 +115,12 @@ Objective-C code sample
 // Contents of file: ViewController.h
 #import <UIKit/UIKit.h>
 #import <OpenXSDKCore/OpenXSDKCore.h>
-  
+
 @interface ViewController : UIViewController <OXMInterstitialControllerDelegate>
-  
+
 @property IBOutlet OXMInterstitialController* interstitialController;
 @property IBOutlet UIButton* showButton;
-  
+
 @end
 ```
 
@@ -134,18 +129,18 @@ Objective-C code sample
 ``` objc
 // Contents of file: ViewController.m
 #import "ViewController.h"
- 
+
 @interface ViewController ()
 @end
- 
+
 @implementation ViewController
- 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.showButton setEnabled: NO];
- 
-    self.interstitialController.adUnitId = @"123456789";
-    self.interstitialController.domain = @"pub-d.openx.net";
+
+    self.interstitialController.adUnitId = @"538821727";
+    self.interstitialController.domain = @"mobile-d.openx.net";
     self.interstitialController.delegate = self;
     self.interstitialController.flexAdSize = OXMFlexAdSize.Interstitial_1024x768_480x320_300x250;
     self.interstitialController.userParameters.userGender = OXMGenderMale;
@@ -153,57 +148,52 @@ Objective-C code sample
     self.interstitialController.autoDisplayOnLoad = NO;
     [self.interstitialController load];
 }
- 
+
 #pragma mark OXMInterstitialControllerDelegate
+
+- (UIViewController *)viewControllerForModalPresentation {
+    return self;
+}
+
 // Called every time an ad has loaded and is ready for display. If you
 // experience an ad quality issue, you can identify the ad by the transactionId
 // in the adDetails object.
-- (void)adDidLoad:(nonnull OXMInterstitialController *)interstitialController adDetails:(nonnull OXMAdDetails *)adDetails {
+- (void)interstitialDidLoad:(nonnull OXMInterstitialController *)interstitialController adDetails:(nonnull OXMAdDetails *)adDetails {
     NSLog(@"Openx ad loaded: %@ with transaction id: %@", interstitialController, adDetails.transactionId);
-                
+
     // When appropriate, show the interstitial.
-    [self.interstitialController showAsInterstitialFromRoot:self];
+    [self.interstitialController show];
 }
- 
+
 // Called whenever the load process fails to produce a viable ad.
-- (void)adDidFailToLoad:(nonnull OXMInterstitialController *)interstitialController error:(nonnull NSError *)error {
+- (void)interstitialDidFailToLoad:(nonnull OXMInterstitialController *)interstitialController error:(nonnull NSError *)error {
     NSLog(@"adDidFailToLoad: %@, error: %@", interstitialController, error);
 }
- 
+
 // Called after an ad has rendered to the device's screen.
-- (void)adDidDisplay:(nonnull OXMInterstitialController *)interstitialController {
+- (void)interstitialDidDisplay:(nonnull OXMInterstitialController *)interstitialController {
     NSLog(@"adDidDisplay: %@", interstitialController);
 }
- 
+
 // Called once an ad has finished displaying all of its creatives.
-- (void)adDidComplete:(nonnull OXMInterstitialController *)interstitialController {
+- (void)interstitialDidComplete:(nonnull OXMInterstitialController *)interstitialController {
     NSLog(@"adDidComplete: %@", interstitialController);
 }
- 
+
 // Called when the user clicks on an ad and a click-through is about to occur.
-- (void)adWasClicked:(nonnull OXMInterstitialController *)interstitialController {
+- (void)interstitialWasClicked:(nonnull OXMInterstitialController *)interstitialController {
     NSLog(@"adWasClicked: %@", interstitialController);
 }
- 
+
 // Called when the user closes a click-through.
-- (void)adClickthroughDidClose:(nonnull OXMInterstitialController *)interstitialController {
+- (void)interstitialClickthroughDidClose:(nonnull OXMInterstitialController *)interstitialController {
     NSLog(@"adClickthroughDidClose: %@", interstitialController);
 }
- 
-// Called when an MRAID ad expands.
-- (void)adDidExpand:(OXMInterstitialController * _Nonnull)interstitialController{
-    NSLog(@"adDidExpand: %@", interstitialController);
-}
- 
-// Called when an MRAID ad collapses.
-- (void)adDidCollapse:(OXMInterstitialController * _Nonnull)interstitialController{
-    NSLog(@"adDidCollapse: %@", interstitialController);
-}
- 
+
 // Called when a displayed interstitial, closes by user.
-- (void)adInterstitialDidClose:(nonnull OXMInterstitialController *)interstitialController {
+- (void)interstitialDidClose:(nonnull OXMInterstitialController *)interstitialController {
     NSLog(@"adInterstitialDidClose: %@", interstitialController);
 }
- 
+
 @end
 ```

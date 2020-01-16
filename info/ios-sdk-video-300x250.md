@@ -33,7 +33,7 @@ Objective-C code sample
     videoAdVC.videoAdView.delegate = self;
         
     videoAdView.domain = @"mobile-d.openx.net";
-    videoAdView.adUnitId = @"540723964";
+    videoAdView.adUnitId = @"540851418";
         
     [self.videoAdView load];
 }
@@ -56,7 +56,7 @@ override func viewDidLoad() {
     videoAdView.delegate = self
         
     videoAdView.domain = "mobile-d.openx.net"
-    videoAdView.adUnitId = "540723964"
+    videoAdView.adUnitId = "540851418"
     	
     videoAdView.load()
 }

@@ -10,7 +10,7 @@ code for banner, interstitial display, and opt-in (rewarded) video ads
 in the AdMob adapter sample app. The sample adapters are built according
 to [AdMob's instructions](https://developers.google.com/admob/ios/mediation/#custom_events).
 
-[Download OpenX AdMob Adapter](https://ssl-i.cdn.openx.com/sdks/OpenX_Mobile_SDK_iOS_AdMob_Adapter_Demo_4.10.0.zip)
+[Download OpenX AdMob Adapter](https://ssl-i.cdn.openx.com/sdks/release-4.10.0/OpenX_Mobile_SDK_iOS_AdMob_Adapter_Demo_4.10.0.zip)
 
 
 1. Get the following from OpenX:
