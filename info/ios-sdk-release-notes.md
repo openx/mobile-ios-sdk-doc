@@ -9,7 +9,7 @@ Jan 14, 2020
 **Features**
 
 * Support the deeplink+. The SDK is able to manage the app-targeting campaigns.
-* Track [render impressions](info/ios-sdk-impression-tracking.md). The SDK tracks impressions according to the MRC Guidelines.
+* Track [render impressions](ios-sdk-impression-tracking.md). The SDK tracks impressions according to the MRC Guidelines.
 * Support CCPA.
 * Update the Transparency and Consent Framework (GDPR) to TCF v2.
 * Support iOS 13.
