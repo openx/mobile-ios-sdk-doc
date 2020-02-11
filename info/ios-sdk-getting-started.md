@@ -15,6 +15,8 @@ For new features and upgrades, please see [Release notes](ios-sdk-release-notes.
 Ad Formats and Tips
 -------------------------
 
+Before the integration, review the SDKs features and use cases.
+
 **Ad Formats and  Integration:**
 
 - [Integrating the SDK with your app](ios-sdk-integration.md)
@@ -54,9 +56,7 @@ the SDK and [launch the demo app](ios-sdk-demo-app.md).
 > **Tip:** You may use these steps as a high-level checklist to ensure a successful
 integration.
 
-1.  Make sure you meet the above [requirements](#getting-started).
-2.  [Download](http://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_4.11.0.zip)
-    the [OpenX Mobile iOS SDK zip file](#sdk-zip-file-contents).
+1.  Make sure you meet the above [requirements](#getting-started).   
 3.  [Integrate the SDK with your app](ios-sdk-integration.md) and
     [initialize the SDK](ios-sdk-integration.md#initializing-the-sdk-for-video-pre-caching).
 4.  If you want to use OpenX as a source of demand on MoPub and/or AdMob
