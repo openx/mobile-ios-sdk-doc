@@ -3,27 +3,44 @@ Integrating the SDK with your app
 
 > **Note:** Please make sure you meet all [requirements](ios-sdk-getting-started.md).
 
-To manually integrate the SDK with your Xcode project:
+CooaPods Integration
+--------------------
+
+
+To download and integrate the SDK into your project using CocoaPods, add the following line to your project’s podfile:
+
+```
+pod 'openx-ios-sdk'
+```
+
+> **Note:** If you used manual integration and want to switch to the CocoaPods approach, remove any previously installed versions of Open XSDKCore from your project at first.
+
+
+Manual Integration
+--------------------
 
 1.  In Xcode, open your project and remove any previously installed
     versions of OpenXSDKCore.
-2.  If you have any existing code integrating the SDK, compare the code
+1.  Expand the zip file and drag OpenXSDKCore.framework from the expanded zip file into your
+    project.
+1.  Verify that the **Copy items into destination's group folder
+    option** is selected and click **OK**.
+1.  Open your project's target settings.
+1.  Verify in the **Frameworks, Libraries and Embedded content** section of **General** tab that **OpenXSDKCore.framework**'s Embed mode is **Embed & Sign**.
+1.  Select the **Build Settings** tab.
+1.  In the **Deployment Info** section of the **General** tab, set
+    **Deployment Target** for your app to **8.0** or later.
+1. If you have any existing code integrating the SDK, compare the code
     samples and instructions in this documentation for each ad type to
     determine what you must change.
-3.  Expand the zip file.
-4.  Drag OpenXSDKCore.framework from the expanded zip file into your
-    project.
-5.  Verify that the **Copy items into destination's group folder
-    option** is selected and click **OK**.
-6.  Open your project's target settings.
-7.  Verify in the **Frameworks, Libraries and Embedded content** section of **General** tab that **OpenXSDKCore.framework**'s Embed mode is **Embed & Sign**.
-8.  Select the **Build Settings** tab.
-9.  In the **Deployment Info** section of the **General** tab, set
-    **Deployment Target** for your app to **8.0** or later.
-10. Open the Info.plist file of your app as a **Property List**:
-    -  Add the **App Transport Security Settings** key and set its **Allow Arbitrary Loads** property to **Yes**. For more information, see [ATS support](#ats-support) below.
-    -  For MRAID ads, include all orientations you wish to support.
-11. [Initialize](#initializing-the-sdk) the SDK.
+    
+
+Update Application Settings
+--------------------
+Open the **Info.plist** file of your app as a **Property List**:
+
+1. Add the **App Transport Security Settings** key and set its **Allow Arbitrary Loads** property to **Yes**. For more information, see [ATS support](#ats-support) below.
+1. For MRAID ads, include all orientations you wish to support.
 
 ATS support
 --------------------

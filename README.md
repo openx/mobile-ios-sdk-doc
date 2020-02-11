@@ -12,7 +12,17 @@ For requirements and integration overview, see [Getting Started](info/ios-sdk-ge
 The current SDK version is **4.11**.
 Go to [the release notes](info/ios-sdk-release-notes.md) for all SDK versions.
 
-Quick download links:
+#### CocoaPods integration
+
+Starting from version 4.11 the OpenX SDK is available through CocoaPods.
+
+To download and integrate the SDK into your project using CocoaPods, add the following line to your project’s podfile:
+
+```
+pod 'openx-ios-sdk'
+```
+
+#### Download SDK and demo applications
 
 - [OpenX iOS SDK and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_4.11.0.zip)
 - [MoPub Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.11.0.zip)
