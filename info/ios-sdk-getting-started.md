@@ -50,7 +50,7 @@ Integration process overview
 
 To integrate the OpenX Mobile iOS SDK, complete the following steps. To
 explore the provided sample implementations
-[download](https://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_4.11.0.zip)
+[download](https://sdk.prod.gcp.openx.org/ios/4.12.0/OpenX_Mobile_SDK_iOS_4.12.0.zip)
 the SDK and [launch the demo app](ios-sdk-demo-app.md).
 
 > **Tip:** You may use these steps as a high-level checklist to ensure a successful

@@ -4,12 +4,11 @@ The OpenX Mobile iOS SDK allows you to integrate OpenX with your apps to
 increase revenue through mobile advertising.
 
 
-
 ## Getting Started
 
 For requirements and integration overview, see [Getting Started](info/ios-sdk-getting-started.md).
 
-The current SDK version is **4.11**.
+The current SDK version is **4.12**.
 Go to [the release notes](info/ios-sdk-release-notes.md) for all SDK versions.
 
 #### CocoaPods integration
@@ -24,9 +23,9 @@ pod 'openx-ios-sdk'
 
 #### Download SDK and demo applications
 
-- [OpenX iOS SDK and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_4.11.0.zip)
-- [MoPub Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.11.0.zip)
-- [AdMob Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.11.0/OpenX_Mobile_SDK_iOS_AdMob_Adapter_Demo_4.11.0.zip)
+- [OpenX iOS SDK and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.12.0/OpenX_Mobile_SDK_iOS_4.12.0.zip)
+- [MoPub Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.12.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.12.0.zip)
+- [AdMob Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.12.0/OpenX_Mobile_SDK_iOS_AdMob_Adapter_Demo_4.12.0.zip)
 
 ## iOS SDK Overview
 
@@ -39,6 +38,7 @@ The following are some of the key capabilities of the iOS SDK.
     -   [Banner](info/ios-sdk-banner-integration.md)
     -   [Interstitial](info/ios-sdk-interstitial-integration.md)
     -   Rich media and MRAID 2.0 support
+    -   <img src="info/res/Beta-banner.png"> MRAID 3.0 support
     -   [Video Interstitial](info/ios-sdk-video-interstitial-integration.md)
     -   [Flex Ads](info/ios-sdk-flex-ads.md)
     -   [Opt-in Video](info/ios-sdk-video-optin-integration.md).
