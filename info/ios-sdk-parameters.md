@@ -64,6 +64,7 @@ OXMSDKConfiguration
 | creativeFactoryTimeoutPreRenderContent | Controls how long (in seconds) the video and display interstitial creative has to completely pre-render before it is considered a failure. | 30          |
 | useInternalClickthroughBrowser         | Controls whether to use in-app browser from OpenX or the Safari app for displaying ad click-through content. | true        |
 | sendMRAIDSupportParams                 | If `true`, the SDK sends "`af=3,5`", indicating support for MRAID. | true        |
+| <img src="res/Beta-banner.png"> sendMRAID3SupportParams                | If `true`, the SDK sends "`af=3,5,6`", indicating support for MRAID 3. **Note:** this flag will make effect only if sendMRAIDSupportParams is **true**. | false        |
 | logLevel                               | Controls the verbosity of OpenXSDKCore's internal logger. Options are (from most to least noisy):<br />- .info<br />- .warn<br />- .error<br />- .none | .info       |
 | debugLogFileEnabled                    | If `true`, the output of OpenXSDKCore's internal logger is written to a text file. This can be helpful for debugging. See [Logging](ios-sdk-logging.md). | false       |
 
