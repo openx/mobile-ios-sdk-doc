@@ -8,7 +8,7 @@ increase revenue through mobile advertising.
 
 For requirements and integration overview, see [Getting Started](info/ios-sdk-getting-started.md).
 
-The current SDK version is **4.12**.
+The current SDK version is **4.13**.
 Go to [the release notes](info/ios-sdk-release-notes.md) for all SDK versions.
 
 #### CocoaPods integration
@@ -23,9 +23,9 @@ pod 'openx-ios-sdk'
 
 #### Download SDK and demo applications
 
-- [OpenX iOS SDK and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.12.0/OpenX_Mobile_SDK_iOS_4.12.0.zip)
-- [MoPub Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.12.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.12.0.zip)
-- [AdMob Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.12.0/OpenX_Mobile_SDK_iOS_AdMob_Adapter_Demo_4.12.0.zip)
+- [OpenX iOS SDK and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.13.0/OpenX_Mobile_SDK_iOS_4.13.0.zip)
+- [MoPub Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.13.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.13.0.zip)
+- [AdMob Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.13.0/OpenX_Mobile_SDK_iOS_AdMob_Adapter_Demo_4.13.0.zip)
 
 ## iOS SDK Overview
 
