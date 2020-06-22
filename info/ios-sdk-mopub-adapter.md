@@ -9,7 +9,7 @@ To help you quickly build your adapter, OpenX provides sample adapter
 code for banner, interstitial, video interstitial, and opt-in (rewarded)
 video.
 
-[Download OpenX MoPub Adapter](https://sdk.prod.gcp.openx.org/ios/4.12.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.12.0.zip)
+[Download OpenX MoPub Adapter](https://sdk.prod.gcp.openx.org/ios/4.13.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.13.0.zip)
 
  The sample adapters are built according to [MoPub's instructions](https://www.mopub.com/resources/docs/mopub-network-mediation/writing-custom-events-for-non-supported-networks-ios/).
 You will need to customize the adapters to meet your needs as instructed
