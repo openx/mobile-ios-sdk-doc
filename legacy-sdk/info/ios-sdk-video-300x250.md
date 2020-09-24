@@ -18,7 +18,7 @@ Integration
     - Set the `adUnitId`. 
     - Set the `domain`.
     - Assign `delegate` and set it to `self`.
-6. (Recommended) Enrich the request by setting values on the [`userParameters`](ios-sdk-parameters.md#oxmuserparameters) property.    
+6. (Recommended) Enrich the request by setting values on the [`OXBTargeting`](ios-sdk-parameters.md) shared instance.
 6.  Call `load()` on `OXMVideoAdView`.
 7.  Implement the [OXMVideoAdViewDelegate](ios-sdk-delegates.md#OXMVideoAdViewDelegate-protocol) methods.
 8.  Display the video interstitial.

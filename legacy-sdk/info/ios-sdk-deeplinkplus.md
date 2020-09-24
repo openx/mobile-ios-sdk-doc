@@ -1,10 +1,11 @@
-# Deep Link+
+Deep-Linking
+================================================
 
 OpenX SDK supports the premium standard for retargeting campaigns - [DeepLink+](https://developers.mopub.com/dsps/ad-formats/deep-linking/)
 
-## Advantages over traditional mobile deep-linking functionality
+## Advantages
 
-Technology has traditionally failed in providing the ideal user experience — as processing traditional deep-links requires opening up blank browser windows, redirecting users multiple times, and sometimes breaking down completely. Additionally, buyers would lack analytics around when primary URLs worked versus when fallback URLs were required.
+Processing traditional deep-links requires opening up blank browser windows, redirecting users multiple times, and sometimes breaking down completely. Additionally, buyers would lack analytics around when primary URLs worked versus when fallback URLs were required.
 
 Deep Link+ provides a premium user experience while letting advertisers scale retargeting campaigns with accurate analytics.
 
@@ -21,7 +22,7 @@ And since Deep Link+ is built into the SDK, there is no need to pop up browser w
 
 The OpenX Mobile SDK supports the DeepLink+ starting from version **4.11**. The schema is supported for both kinds of ads - video and display.
 
-The JSTag integration is not supported yet.
+The JSTag integration does not support it yet.
 
 
 ## How it works

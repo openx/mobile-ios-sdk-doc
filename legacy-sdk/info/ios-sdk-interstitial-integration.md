@@ -19,7 +19,7 @@ Integration
     -  Set the `adUnitID`.
     -  Set the `domain`.
     -  Assign the `delegate` and set it to `self`.
-    -  (Recommended) Enrich the request by setting values on the [`userParameters`](ios-sdk-parameters.md) property.
+    -  (Recommended) Enrich the request by setting values on the [`OXBTargeting`](ios-sdk-parameters.md) shared instance.
     -  Set `autoDisplayOnLoad` to `false`.
 5.  Call `load()` on the `OXMInterstitialController`.
 6.  Implement the [OXMInterstitialControllerDelegate](ios-sdk-delegates.md#oxminterstitialcontrollerdelegate-protocol) methods.
@@ -45,9 +45,12 @@ class MyViewController : UIViewController, OXMInterstitialControllerDelegate{
         self.interstitialController.domain = "mobile-d.openx.net"
         self.interstitialController.delegate = self
         self.interstitialController.flexAdSize = OXMFlexAdSize.Interstitial_1024x768_480x320_300x250
-        self.interstitialController.userParameters.userGender = OXMGender.male
-        self.interstitialController.userParameters.userAge = 21
         self.interstitialController.autoDisplayOnLoad = false
+
+        let targeting = OXBTargeting.shared()
+        targeting.userGender = .male
+        targeting.userAge = 21
+
         self.interstitialController.load()
     }
 
@@ -143,9 +146,11 @@ Objective-C code sample
     self.interstitialController.domain = @"mobile-d.openx.net";
     self.interstitialController.delegate = self;
     self.interstitialController.flexAdSize = OXMFlexAdSize.Interstitial_1024x768_480x320_300x250;
-    self.interstitialController.userParameters.userGender = OXMGenderMale;
-    self.interstitialController.userParameters.userAge = 21;
     self.interstitialController.autoDisplayOnLoad = NO;
+
+    OXBTargeting.shared.userGender = OXMGenderMale;
+    OXBTargeting.shared.userAge = 21;
+
     [self.interstitialController load];
 }
 

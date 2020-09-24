@@ -26,8 +26,7 @@ Integration
         unit ID).
     -  Assign `delegate` and set it to `self`.
     -  Set `autoDisplayOnLoad` to `false`.
-    -  (Recommended) Enrich the request by setting values on the
-        `userParameters` property.
+    -  (Recommended) Enrich the request by setting values on the [`OXBTargeting`](ios-sdk-parameters.md) shared instance.
 5.  To set the ad unit as an opt-in video, set the `isRewarded` flag to
     `YES`.
 6.  Call `load()` on `OXMInterstitialController`.

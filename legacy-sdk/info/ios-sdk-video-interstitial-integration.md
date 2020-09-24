@@ -25,7 +25,7 @@ Some integration steps vary as indicated, depending on which OpenX Mobile SDK ve
     - Set the `domain`.
     - Assign `delegate` and set it to `self`.
     - Set `autoDisplayOnLoad` to `false`.
-5. (Recommended) Enrich the request by setting values on the [`userParameters`](ios-sdk-parameters.md#oxmuserparameters) property.
+5. (Recommended) Enrich the request by setting values on the [`OXBTargeting`](ios-sdk-parameters.md) shared instance.
 6.  If needed, set the desired `closeDelay` on [`OXMInterstitialDisplayProperties`](ios-sdk-parameters.html#oxminterstitialdisplayproperties).
     -   Videos that span 2 seconds or less cannot be closed early.
     -   Videos longer than 2 seconds will display a Close button at 2
