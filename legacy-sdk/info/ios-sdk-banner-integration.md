@@ -20,7 +20,7 @@ Integration
     - Set the `adUnitID`.
     - Set the `domain`.
     - Assign the `delegate` and set it to `self`.
-    - (Recommended) Enrich the request by setting values on the [`userParameters`](ios-sdk-parameters.md) property.
+    - (Recommended) Enrich the request by setting values on the [`OXBTargeting`](ios-sdk-parameters.md) shared instance.
 5.  Call `load()` on the `OXMBannerView`.
 6.  Implement the [`OXMBannerViewDelegate`](ios-sdk-delegates.md) methods.
 7.  If you want to use flex ads to allow multiple ad sizes for an ad

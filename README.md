@@ -1,66 +1,72 @@
-# OpenX iOS SDK
+# OpenX Apollo iOS SDK
 
-The OpenX Mobile iOS SDK allows you to integrate OpenX with your apps to
-increase revenue through mobile advertising.
+The OpenX Apollo iOS SDK allows you to integrate  into your apps prebid solution hosted by OpenX to increase revenue through mobile advertising.
 
+> **_NOTE:_**  The documentation for the legacy OpenX SDK is available [here](legacy_sdk/LEGACY_SDK_README.md).
 
 ## Getting Started
 
-For requirements and integration overview, see [Getting Started](info/ios-sdk-getting-started.md).
+For requirements and integration overview, see [Getting Started](info/ios-in-app-bidding-getting-started.md).
 
-The current SDK version is **4.13**.
-Go to [the release notes](info/ios-sdk-release-notes.md) for all SDK versions.
+The current SDK version is **1.0.0**.
+Go to [release notes](info/ios-in-app-bidding-release-notes.md) for all SDK versions.
 
 #### CocoaPods integration
-
-Starting from version 4.11 the OpenX SDK is available through CocoaPods.
 
 To download and integrate the SDK into your project using CocoaPods, add the following line to your project’s podfile:
 
 ```
-pod 'openx-ios-sdk'
+pod 'openx-apollo-sdk'
+```
+
+If you integrate Apollo with GAM or MoPub add these pods respectively
+
+```
+# + Google Ad Manager (optional)
+pod 'openx-apollo-gam-event-handlers'
+
+# + MoPub (optional)
+pod 'openx-apollo-mopub-adapters'
 ```
 
 #### Download SDK and demo applications
 
-- [OpenX iOS SDK and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.13.0/OpenX_Mobile_SDK_iOS_4.13.0.zip)
-- [MoPub Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.13.0/OpenX_Mobile_SDK_iOS_MoPub_Adapter_Demo_4.13.0.zip)
-- [AdMob Adapter and Demo Applications](https://sdk.prod.gcp.openx.org/ios/4.13.0/OpenX_Mobile_SDK_iOS_AdMob_Adapter_Demo_4.13.0.zip)
+Also, you can download and integrate all needed components manually:
 
-## iOS SDK Overview
+- [Apollo SDK](http://sdk.prod.gcp.openx.org/apollo/ios/sdk/1.0.0/OpenX_Apollo_SDK_iOS_1.0.0.zip)
+- [GAM Event Handlers](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/GAM/1.0.0/OpenX_Apollo_GAMEventHandlers_iOS_1.0.0.zip)
+- [MoPub Adapters](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/MoPub/1.0.0/OpenX_Apollo_MoPub_Adapters_iOS_1.0.0.zip)
+- [Demo Application](http://sdk.prod.gcp.openx.org/apollo/ios/demo/1.0.0/OpenX_Apollo_DemoApp_iOS_1.0.0.zip)
 
-The following are some of the key capabilities of the iOS SDK.
+
+## In-App Bidding SDK Overview
+
+Here are key capabilities of the iOS In-App Bidding SDK:
+
+-   **Integration Scenarios**
+    - [Google Ad Manager](info/integration-gam/ios-in-app-bidding-gam-info.md)
+    - [MoPub](info/integration-mopub/ios-in-app-bidding-mopub-info.md)
+    - [Pure In-App Bidding](info/integration-pb/ios-in-app-bidding-pb-info.md)
+
 
 <img src="info/res/IAB_Cert.png" alt="Pipeline Screenshot" height="320" width="320" align="right">
 
 
--   **Support for these premium ad formats:**
-    -   [Banner](info/ios-sdk-banner-integration.md)
-    -   [Interstitial](info/ios-sdk-interstitial-integration.md)
-    -   Rich media and MRAID 2.0 support
-    -   <img src="info/res/Beta-banner.png"> MRAID 3.0 support
-    -   [Video Interstitial](info/ios-sdk-video-interstitial-integration.md)
-    -   [Flex Ads](info/ios-sdk-flex-ads.md)
-    -   [Opt-in Video](info/ios-sdk-video-optin-integration.md).
-    -   [300x250 Video](info/ios-sdk-video-300x250.md).
--   **Support Open Measurement**. The OpenX SDK is certified with IAB and MOAT.
+-   **Support of these premium ad formats:**
+    -   Banner
+    -   Interstitial
+    -   Rich media and MRAID 3.0 support
+    -   Video Interstitial
+    -   Rewarded Video
+    -   Outstream Video
+-   **Open Measurement Support**. The In-App Bidding SDK is based on the former OpenX SDK which is certificated with IAB, IAS and MOAT.
 -   **Direct SDK integration**. Allows you to pass first-party app data,
     user data, device data, and location data.  
--   **Privacy Regulation Compliance**. The OpenX SDK implements the support of **GDPR**, **CCPA**, **COPPA** requirements according to the IAB specifications.
--   **App targeting campaigns**. Regarding to the [support of deeplink+](info/ios-sdk-deeplinkplus.md) SDK is able to manage the ads with premium UX for retargeting campaigns.
--   ❗ **Customization**. Permits the use of [custom ad parameters](info/ios-sdk-parameters.md) to increase the chance to win an impression, and allows to improve UX of the ad views.
--   **Quality controls and safeguards:**
-    -   Proactive creative scanner and smart logic that minimizes
-        re-directs and spoofed user-clicks.
-    -   Automatic blocking of pop-ups using WKWebKit.
-    -   [Ad quality controls](https://docs.openx.com/Content/publishers/ad_quality.html)
-        : white/blacklist capabilities and creative and brand filters.
-    -   [Transaction IDs](info/ios-sdk-ad-quality.md) for every [banner](info/ios-sdk-banner-integration.md) and  [interstitial](ios-sdk-interstitial-integration.md) display ad, letting you manage and report ad quality issues.
--   ❗ **Tracking of render impression**. Starting from 4.11 the OpenX SDK tracks [render impressions](info/ios-sdk-impression-tracking.md) according to the IAB Measurement Guidelines.
--   **[Demo app](info/ios-sdk-demo-app.md)** that serves as an
-    implementation guide and test environment.
--   **Pre-built adapter** for [MoPub.](info/ios-sdk-mopub-adapter.md)
--   **Pre-built adapter** for [AdMob](info/ios-sdk-admob-adapter.md).
+-   **Privacy Regulation Compliance**. The In-App Bidding SDK meets **GDPR**, **CCPA**, **COPPA** requirements according to the IAB specifications.
+-   **App targeting campaigns**. With the [support of deeplink+](info/ios-sdk-deeplinkplus.md) SDK is able to manage the ads with premium UX for retargeting campaigns.
+-    **Targeting**. Use [custom ad parameters](info/ios-sdk-parameters.md) to increase the chance to win an impression and to improve ad views' UX.
+-   **Tracking of render impression**. The OpenX In-App Bidding SDK tracks [render impressions](info/ios-sdk-impression-tracking.md) according to the IAB Measurement Guidelines for all managed ads. Ads rendered by Primary Ad Server SDK track an impression beacon according to the internal algorithms.
+-   **Demo app** that serves as an implementation guide and test environment.
 -   **Fast and seamless integration.**
 
 
