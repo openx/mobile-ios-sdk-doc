@@ -1,10 +1,10 @@
-# OpenX iOS In-App Bidding SDK Release notes
+# OpenX iOS Apollo SDK Release notes
 
 ## Version 1.0.0
 
-Sep XX, 2020
+Sep 24, 2020
 
-The initial release allows publishers to integrate In-App Bidding approach based on the Apollo service into a mobile application. It supports the integration scenarios with major primary ad servers and provides the most popular ad formats. In addition, SDK supports major industry standards in privacy and viewability tracking.
+The initial release allows publishers to integrate In-App Bidding approach based on the Apollo service into a mobile application. It supports the integration scenarios with major primary ad servers and provides the most popular ad formats. In addition, SDK supports major industry standards in privacy and viewability measurement.
 
 **Integration**
 
