@@ -1,6 +1,6 @@
 # Deep Link+
 
-OpenX SDK supports the premium standard for retargeting campaigns - [DeepLink+](https://developers.mopub.com/dsps/ad-formats/deep-linking/)
+The OpenX SDK supports the premium standard for retargeting campaigns - [DeepLink+](https://developers.mopub.com/dsps/ad-formats/deep-linking/).
 
 ## Advantages over traditional mobile deep-linking functionality
 
@@ -15,7 +15,7 @@ The new deeplinking format enables buyers to submit:
  * primary tracking URL
  * fallback tracking URL
 
-And since Deep Link+ is built into the SDK, there is no need to pop up browser windows and re-directs that deteriorate the user experience.
+And since Deep Link+ is built into the SDK, there is no need to pop up browser windows and use re-directs that deteriorate the user experience.
 
 ## Support
 
@@ -32,7 +32,7 @@ DSPs should rely on the SDK version in the bid request:
 "displaymanagerver": "4.11.0"
 ```
 
-Starting with version 4.11.0 iOS SDK supports deeplink+
+Starting with version 4.11.0 iOS SDK supports deeplink+.
 
 To leverage the retargeting campaigns buyers use a specific scheme as click URL in the ad response. That URL describes the deep-linking and failover logic:
 
