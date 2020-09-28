@@ -22,7 +22,6 @@ OXBTargeting variables
 | userAnnualIncomeInUS | UInt32           | Annual income of the user in US dollars. For example: `55000` | ❗ Highly Recommended |
 | userGender           | OXMGender        | The gender of the user (Male, Female, Other, Unknown). For example: `OXMGenderFemale` | ❗ Highly Recommended  |
 | userID               | NSString         | ID of the user within the app. For example: `"24601"`   | ❗ Highly Recommended  |
-| userEthnicity        | OXMEthnicity     | Ethnicity of the user (African American, Asian, Hispanic, White, Other). For example: `OXMEthnicityAsian` | Recommended if available  |
 | userMaritalStatus    | OXMMaritalStatus | The marital status of the user (Single, Married, Divorced, Unknown). For example: `OXMMaritalStatusDivorced` | Recommended if available |
 | carrier              | NSString         | Mobile carrier - Defined by the Mobile Country Code (MCC) and Mobile Network Code (MNC), using the format: <MCC>-<MNC>. For example: `"310-410"` | Optional                 |
 | DMA                  | NSString         | For US locations, indicates the user's Designated Market Area. For example: `"803"` | Optional                 |
