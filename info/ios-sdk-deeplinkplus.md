@@ -66,14 +66,7 @@ The SDK will process this scheme regarding to the standard.
 
 **Buyers**: Must insert the deeplink+ scheme into creative or provide it via redirect for the regular clickthrough URL.
 
-## Demo
-
-Check out the following examples from [Demo Application](ios-sdk-demo-app.md) on the real device:
-
-- **Banner with deeplink+**
-- **Video Interstitial with deeplink+**
-
-You must also install Twitter.
+## Sample Tag
 
 The display ad code sample:
 
@@ -92,3 +85,6 @@ deeplink+://navigate?primaryUrl=twitter%3A%2F%2Ftimeline&primaryTrackingUrl=http
 </ClickThrough>
 </VideoClicks>
 ```
+
+You must also install Twitter.
+
