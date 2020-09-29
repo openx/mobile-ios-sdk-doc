@@ -1,8 +1,8 @@
 # OpenX Apollo iOS SDK
 
-The OpenX Apollo iOS SDK allows you to integrate  into your apps prebid solution hosted by OpenX to increase revenue through mobile advertising.
+The OpenX Apollo iOS SDK allows you to integrate into your apps the Prebid solution hosted by OpenX to increase revenue through mobile advertising.
 
-> **_NOTE:_**  The documentation for the legacy OpenX SDK is available [here](legacy_sdk/LEGACY_SDK_README.md).
+> **_NOTE:_**  The documentation for the legacy OpenX SDK is available [here](legacy-sdk/LEGACY_SDK_README.md).
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ To download and integrate the SDK into your project using CocoaPods, add the fol
 pod 'openx-apollo-sdk'
 ```
 
-If you integrate Apollo with GAM or MoPub add these pods respectively
+If you integrate Apollo with GAM or MoPub add these pods respectively:
 
 ```
 # + Google Ad Manager (optional)
@@ -72,4 +72,4 @@ Here are key capabilities of the iOS In-App Bidding SDK:
 
 ## Contact Us
 
-If you have any questions or need help, go to [OpenX Support](https://docs.openx.com/Content/support.html).
+If you have any questions or need help, go to [OpenX Support](https://docs.openx.com/resources/support/).

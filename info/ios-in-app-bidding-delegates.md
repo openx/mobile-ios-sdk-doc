@@ -1,7 +1,7 @@
 # In-App Bidding Delegates
 
 
-The tables below list the delegate methods that In-App Biddibg SDK supports for banner, interstitial and rewarded ads in **Google Ad Manager** and **Pure In-App Bidding** facades.
+The tables below list the delegate methods that the In-App Bidding SDK supports for banner, interstitial, and rewarded ads in the **Google Ad Manager** and **Pure In-App Bidding** facades.
 
 ## OXABannerViewDelegate protocol
 
@@ -22,11 +22,11 @@ The tables below list the delegate methods that In-App Biddibg SDK supports for 
 | ---------------------- |----------------|------------------------------------------------------------ |
 | `interstitialDidReceiveAd`                    | *optional* | An ad is loaded though not necessarily shown. |
 | `interstitial:didFailToReceiveAdWithError:`   | *optional* | The load process fails to produce a viable ad.|
-| `interstitialClickthroughDidClose`            | *optional* | The in-app browser, opened as a result of clicking an ad, has closed. |
-| `interstitialWillPresentAd`                   | *optional* | Called when the interstitial view will be launched,  as a result of show() method.|
-| `interstitialDidDismissAd`                    | *optional* | Called when the interstial is dismissed by the user.|
+| `interstitialClickthroughDidClose`            | *optional* | The in-app browser, opened as a result of clicking an ad has closed. |
+| `interstitialWillPresentAd`                   | *optional* | Called when the interstitial view will be launched,  as a result of the `show()` method.|
+| `interstitialDidDismissAd`                    | *optional* | Called when the interstitial is dismissed by the user.|
 | `interstitialDidClickAd`                      | *optional* | A user clicks an ad, an in-app browser is opened. |
-| `interstitialWillLeaveApplication`            | *optional* | The ad's creative's navigation caused the user to exit the app. For example, the user clicked a link in the ad that opened the mobile browser. |
+| `interstitialWillLeaveApplication`            | *optional* | The navigation of the ad's creative caused the user to exit the app. For example, the user clicked a link in the ad that opened the mobile browser. |
 
 ## OXARewardedAdUnitDelegate protocol
 
@@ -36,9 +36,8 @@ The tables below list the delegate methods that In-App Biddibg SDK supports for 
 | `rewardedAdDidReceiveAd`                    | *optional* | An ad is loaded though not necessarily shown. |
 | `rewardedAdUserDidEarnReward`                    | *optional* |Called when user is able to receive a reward from the app. |
 | `rewardedAd:didFailToReceiveAdWithError:`   | *optional* | The load process fails to produce a viable ad.|
-| `interstitialClickthroughDidClose`            | *optional* | The in-app browser, opened as a result of clicking an ad, has closed. |
-| `rewardedAdWillPresentAd`                   | *optional* | Called when the interstitial view will be launched,  as a result of show() method.|
+| `interstitialClickthroughDidClose`            | *optional* | The in-app browser, opened as a result of clicking an ad has closed. |
+| `rewardedAdWillPresentAd`                   | *optional* | Called when the interstitial view will be launched,  as a result of the `show()` method.|
 | `rewardedAdDidDismissAd`                    | *optional* | Called when the interstitial is dismissed by the user. |
 | `rewardedAdDidDismissAd`                      | *optional* | A user clicks an ad, an in-app browser is opened. |
-| `rewardedAdWillLeaveApplication`            | *optional* | The ad's creative's navigation caused the user to exit the app. For example, the user clicked a link in the ad that opened the mobile browser. |
-
+| `rewardedAdWillLeaveApplication`            | *optional* | The navigation of the ad's creative caused the user to exit the app. For example, the user clicked a link in the ad that opened the mobile browser. |

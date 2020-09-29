@@ -19,7 +19,7 @@ You may have to provide your logs for troubleshooting purposes, for example, thr
 5.  On the .xcappdata file, Ctrl+click and select **Show package contents** to navigate to the following file:
 
     App Data \> Documents \> OXALog.txt
-    
+
     This is the log file of the SDK. You can now view, save, or share the file as needed.
 
 The SDK creates this file and logs events as long as
@@ -35,4 +35,3 @@ Error messages can inform you of configuration or any possible issue that need t
 |`InvalidRequest`   |Indicates that there could be a problem with your configuration.       |Check your configuration. Invalid request errors usually inform you of a missing required settings, such as server account ID, configuration ID or creative. If you need help with troubleshooting configuration errors, please visit the [OpenX Support Community](https://community.openx.com/s/).|
 |`InternalError`    |Indicates a problem with the SDK that needs to be resolved by OpenX.   |Please request resolution assistance through the [OpenX Support Community](https://community.openx.com/s/). Make sure to include the error message.|
 |`ServerError`      |Indicates a problem that needs to be resolved by OpenX.                |Please request resolution assistance through the [OpenX Support Community](https://community.openx.com/s/). Make sure to include the error message.|
-
