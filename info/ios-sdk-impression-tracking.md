@@ -2,20 +2,20 @@
 
 ## Responsibilities
 
-The impression tracking in the In-App Bidding SDK depends on a certain integration approach.
+The impression tracking in In-App Bidding SDK depends on a certain integration approach. 
 
-In case of a GAM or MoPub integration when the Ad Server ad wins - the impression will be tracked according to the policy of the certain Primary Ad Server SDK that will handle the rendering.
+In case of GAM or MoPub integration when the Ad Server ad wins - the impression will be tracked according to the policy of the certain Primary Ad Server SDK that will handle the rendering.
 
-If the Apollo ad wins on the Primary Ad Server Auction, the impression tracking will depend on the particular integration type:
+If Apollo ad wins on the Primary Ad Server Auction, the impression tracking will depend on particular integration kind:
 
 * **GAM** impression will be tracked only for banner ads since it allows [manual impression counting](https://developers.google.com/ad-manager/mobile-ads-sdk/ios/banner#manual_impression_counting). In-App Bidding SDK is not able to track impressions for GAM Interstitial or Rewarded ads.
-* **MoPub** impression will be tracked as stated in the MoPub policies because the rendering part is performed according to the Mediation feature.
+* **MoPub** impression will be tracked as stated in the MoPub policies since the rendering part is performed according to the Mediation feature. 
 * **Pure In-App Bidding** impression pixels for Open Measurement and VAST will be tracked according to the [In-App Bidding Impression](#In-App-Bidding-Impression) policies of the SDK.
 
 
 ## In-App Bidding Impression
 
-The In-App Bidding SDK tracks the impression pixel as stated in a definition of **render impression** from [Mobile Application Advertising Measurement Guidelines](http://mediaratingcouncil.org/Mobile%20In-App%20Measurement%20Guidelines%20(MMTF%20Final%20v1.1).pdf):
+In-App Bidding SDK tracks the impression pixel as stated in a definition of **render impression** from [Mobile Application Advertising Measurement Guidelines](http://mediaratingcouncil.org/Mobile%20In-App%20Measurement%20Guidelines%20(MMTF%20Final%20v1.1).pdf):
 
 
 > **Ad Impression**: A measurement of responses from an ad delivery system to an ad request from the user's device, which is filtered for invalid traffic and is recorded at a point as late as possible in the process of delivery of the creative material to the user's device. The ad must be loaded and at minimum begin to render in order to count it as a valid ad impression. Measurement of begin to render should include logical components necessary to display the ad, but does not necessarily include logical elements that are not essential (such as other tracking elements).
@@ -23,7 +23,7 @@ The In-App Bidding SDK tracks the impression pixel as stated in a definition of 
 > In the context of the guidance above, “loaded” means the logical creative file has been transmitted and received at the client-side (user device) and “render” refers to the process of painting the creative file or adding it to any portion of the Document Object Model.
 
 The impression pixel is triggered when at least 1 pixel of the creative appears on the screen.
-This rule is applied to all tracking pixels, which are managed by the In-App Bidding SDK - display, video, Open Measurement.
+This rule is applied to all tracking pixels, which are managed by In-App Bidding SDK - display, video, Open Measurement.
 
 ## MRAID
 
