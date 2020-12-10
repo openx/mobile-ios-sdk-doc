@@ -15,6 +15,8 @@ The tables below list methods and properties that the In-App Bidding SDK allows 
 |contentUrl            | NSString         |  This is the deep-link URL for the app screen that is displaying the ad. This can be an iOS universal link.  | ❗ Highly Recommended                 |
 |publisherName| NSString | App's publisher's name. | ❗ Highly Recommended                 |
 | userAge              | UInt16           | User's age in years. For example: `35`  | ❗ Highly Recommended |
+| coppa                | NSNumber         | Flag indicating if this request is subject to the COPPA regulations
+ established by the USA FTC, where 0 = no, 1 = yes  | ❗ Highly Recommended |
 | userAnnualIncomeInUS | UInt32           | User's annual income in US dollars. For example: `55000` | ❗ Highly Recommended |
 | userGender           | OXAGender        | User's gender (Male, Female, Other, Unknown). For example: `OXAGenderFemale` | ❗ Highly Recommended  |
 |userGenderDescription| NSString | String representation of the user's gender, where “M” = male, “F” = female, “O” = known to be other (i.e., omitted is unknown) | |
