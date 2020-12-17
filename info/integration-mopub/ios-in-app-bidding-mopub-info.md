@@ -70,7 +70,7 @@ The framework could be added to the app via CocoaPods:
 pod 'openx-apollo-mopub-adapters'
 ```
 
-Or you can [download](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/MoPub/1.0.0/OpenX_Apollo_MoPub_Adapters_iOS_1.0.0.zip) it manually and add as any other regular framework. MoPub SDK will eventually instantiate and use adapter classes in runtime.
+Or you can [download](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/MoPub/1.1.0/OpenX_Apollo_MoPub_Adapters_iOS_1.1.0.zip) it manually and add as any other regular framework. MoPub SDK will eventually instantiate and use adapter classes in runtime.
 
 
 ### Banner API

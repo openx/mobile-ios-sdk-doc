@@ -50,7 +50,7 @@ GAM Event Handlers is a set of classes that wrap the GAM Ad Units and manage the
 pod 'openx-apollo-gam-event-handlers'
 ```
 
-Or you can [download](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/GAM/1.0.0/OpenX_Apollo_GAMEventHandlers_iOS_1.0.0.zip) it manually and add as any other regular framework
+Or you can [download](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/GAM/1.1.0/OpenX_Apollo_GAMEventHandlers_iOS_1.1.0.zip) it manually and add as any other regular framework
 
 
 ### Init In-App Bidding SDK

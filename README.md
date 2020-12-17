@@ -33,10 +33,10 @@ pod 'openx-apollo-mopub-adapters'
 
 Also, you can download and integrate all needed components manually:
 
-- [Apollo SDK](http://sdk.prod.gcp.openx.org/apollo/ios/sdk/1.0.0/OpenX_Apollo_SDK_iOS_1.0.0.zip)
-- [GAM Event Handlers](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/GAM/1.0.0/OpenX_Apollo_GAMEventHandlers_iOS_1.0.0.zip)
-- [MoPub Adapters](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/MoPub/1.0.0/OpenX_Apollo_MoPub_Adapters_iOS_1.0.0.zip)
-- [Demo Application](http://sdk.prod.gcp.openx.org/apollo/ios/demo/1.0.0/OpenX_Apollo_DemoApp_iOS_1.0.0.zip)
+- [Apollo SDK](http://sdk.prod.gcp.openx.org/apollo/ios/sdk/1.1.0/OpenX_Apollo_SDK_iOS_1.1.0.zip)
+- [GAM Event Handlers](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/GAM/1.1.0/OpenX_Apollo_GAMEventHandlers_iOS_1.1.0.zip)
+- [MoPub Adapters](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/MoPub/1.1.0/OpenX_Apollo_MoPub_Adapters_iOS_1.1.0.zip)
+- [Demo Application](http://sdk.prod.gcp.openx.org/apollo/ios/demo/1.1.0/OpenX_Apollo_DemoApp_iOS_1.1.0.zip)
 
 
 ## In-App Bidding SDK Overview
