@@ -2,7 +2,8 @@
 
 ## Table of Contents
 
-1. [Mobile API](#Mobile-API)
+2. [Order setup](#Order-setup)
+3. [Mobile API](#Mobile-API)
     - [Init SDK](#Init-In-App-Bidding-SDK)
     - [Banner](#Banner-API)
     - [Interstitial](#Interstitial-API)
@@ -15,21 +16,22 @@ The integration of Pure In-App Bidding is similar to the integration of any othe
 <img src="../res/Pure-In-App-Bidding-Integration.png" alt="Pipeline Screenshot" align="center">
 
 
-The OpenX In-App Bidding SDK provides ability to integrate header bidding for the following ad types:
+OpenX In-App Bidding SDK provides ability to integrate header bidding for these ad kinds:
 
 - Display Banner
 - Display Interstitial
-- Video Interstitial
+- [Native Styles](../integration-apollo/ios-in-app-bidding-apollo-native-integration.md)
+- Video Interstitial 
 - Rewarded Video
 - Outstream Video
 
-However, the OpenX In-App Bidding facade provides only three types of API classes for the following ads:
+However, OpenX In-App Bidding facade provides only three kinds of API classes for these ads:
 
-- **Banner API** - for **Display Banner**
+- **Banner API** - for **Display Banner** 
 - **Interstitial API** - for **Display** and **Video** Interstitials
 - **Rewarded API** - for **Rewarded Video**
 
-To create an Apollo account and start using the SDK, visit the [OpenX Apollo](https://www.openx.com/prebid/) page first.
+To create an Apollo account and start to use the SDK, visit the [OpenX Apollo](https://www.openx.com/prebid/) page first.
 
 ### Banner API
 
@@ -41,33 +43,33 @@ To display an ad you need to implement three easy steps:
 let banner = OXABannerView(frame: CGRect(origin: .zero, size: adSize),
                            configId: APOLLO_CONFIG_ID,
                            adSize: adSize)
-
+    
 banner.delegate = self
-
+    
 // 2. Load an Ad
 banner.loadAd()
 ```
 
 #### Step 1: Create Ad View
 
-In the Pure In-App Bidding scenario you just need to initialize the Banner Ad View with the correct properties:
+In the Pure In-App Bidding scenario you just need to initialize the Banner Ad View with correct properties:
 
-- **`frame`** - the frame rectangle for the view
-- **`configId`** - an ID of Stored Impression on the Apollo server
-- **`size`** - the size of the ad unit which will be used in the bid request.
+- **frame** - the frame rectangle for the view
+- **configId** - an ID of Stored Impression on the Apollo server
+- **size** - the size of the ad unit which will be used in the bid request.
 
 And assign the [delegate](../ios-in-app-bidding-delegates.md) for processing ad events.
 
 #### Step 2: Load the Ad
 
-Simply call `loadAd()` and the SDK will:
+Simply call `loadAd()` and SDK will:
 
-- make the bid request to Apollo
+- make a bid request to Apollo
 - render the winning bid on display
 
 #### Outstream Video
 
-For **Outstream Video** you also need to specify the expected ad type:
+For **Outstream Video** you also need to specify the kind of expected ad:
 
 ``` swift
 banner.adFormat = .video
@@ -82,9 +84,9 @@ To display an ad you need to implement these easy steps:
 // 1. Create an Interstitial Ad Unit
 interstitial = OXAInterstitialAdUnit(configId: APOLLO_CONFIG_ID,
                                      minSizePercentage: CGSize(width: 30, height: 30))
-
+    
 interstitial.delegate = self
-
+    
 // 2. Load an Ad
 interstitial.loadAd()
 
@@ -99,17 +101,17 @@ if interstitial.isReady {
 
 The way of displaying **Video Interstitial Ad** is almost the same with two differences:
 
-- Need to customize the ad unit type
+- Need customize the ad unit kind
 - No need to set up `minSizePercentage`
 
 ``` swift
 
 // 1. Create an Interstitial Ad Unit
 let interstitial = OXAInterstitialAdUnit(configId: APOLLO_CONFIG_ID)
-
+    
 interstitial.adFormat = .video
 interstitial.delegate = self
-
+    
 // 2. Load an Ad
 interstitial.loadAd()
 
@@ -126,28 +128,28 @@ if interstitial.isReady {
 #### Step 1: Create an Ad Unit
 
 
-In the Pure In-App Bidding scenario you just need to initialize the Banner Ad View with the correct properties:
+In the Pure In-App Bidding scenario you just need to initialize the Banner Ad View with correct properties:
 
-- **`configId`** - an ID of Stored Impression on the Apollo server
-- **`minSizePercentage`** - specifies the minimum width and height percent an ad may occupy of a device’s real estate.
+- **configId** - an ID of Stored Impression on the Apollo server
+- **minSizePercentage** - specifies the minimum width and height percent an ad may occupy of a device’s real estate.
 
-In addition, you can assign the [delegate](../ios-in-app-bidding-delegates.md) for processing ad events.
+Also you can assign the [delegate](../ios-in-app-bidding-delegates.md) for processing ad events.
 
-> **NOTE:** `minSizePercentage` plays an important role in a bidding process for display ads. If the provided space is not enough demand partners will not respond with the bids.
+> **NOTE:** minSizePercentage - plays an important role in a bidding process for display ads. If provided space is not enough demand partners won't respond with the bids.
 
 #### Step 2: Load the Ad
 
-Simply call the `loadAd()` method to start the [In-App Bidding](../ios-in-app-bidding-getting-started.md) flow.
+Simply call the `loadAd()` method to start [In-App Bidding](../ios-in-app-bidding-getting-started.md) flow.
 
 
-#### Step 3: Show the Ad when Ready
+#### Step 3: Show the Ad when it is ready
 
 
 The most convenient way to determine if the ad is ready for displaying is to subscribe to the particular [delegate](../ios-in-app-bidding-delegates.md) method:
 
 ``` swift
 // MARK: OXAInterstitialAdUnitDelegate
-
+    
 func interstitialDidReceiveAd(_ interstitial: OXAInterstitialAdUnit) {
     // Now the ad is ready for display
 }
@@ -158,14 +160,14 @@ However, due to the expiration, the ad could become invalid with time. So it is 
 
 ### Rewarded API
 
-To display an ad you need to implement the following easy steps:
+To display an ad you need to implement these easy steps:
 
 
 ``` swift
 // 1. Create an Ad Unit
 rewardedAd = OXARewardedAdUnit(configId: APOLLO_CONFIG_ID)
 rewardedAd.delegate = self
-
+    
 // 2. Load an Ad
 rewardedAd.loadAd()
 
@@ -177,7 +179,7 @@ if rewardedAd.isReady {
 }
 ```
 
-To be notified when a user earns a reward, implement the method of `OXARewardedAdUnitDelegate`. Now this method will be called when the ad is completed.
+To be notified when a user earns a reward - implement the method of `OXARewardedAdUnitDelegate`. Now this method will be called when the ad is completed. 
 
 ``` swift
 func rewardedAdUserDidEarnReward(_ rewardedAd: OXARewardedAdUnit) {
@@ -187,24 +189,32 @@ func rewardedAdUserDidEarnReward(_ rewardedAd: OXARewardedAdUnit) {
 
 #### Step 1: Create Rewarded Ad Unit
 
-Create the **`OXARewardedAdUnit`** object with the parameter:
+Create the **OXARewardedAdUnit** object with parameter:
 
-- **`ApolloAdUnitId`** - an ID of Stored Impression on the Apollo server
+- **ApolloAdUnitId** - an ID of Stored Impression on the Apollo server
 
 #### Step 2: Load the Ad
 
-Simply call the `loadAd()` method to start the [In-App Bidding](../ios-in-app-bidding-getting-started.md) flow.
+Simply call the `loadAd()` method to start [In-App Bidding](../ios-in-app-bidding-getting-started.md) flow.
 
 
-#### Step 3: Show the Ad when Ready
+#### Step 3: Show the Ad when it is ready
 
 
 The most convenient way to determine if the ad is ready for displaying is to subscribe to the particular [delegate](../ios-in-app-bidding-delegates.md) method:
 
 ``` swift
 // MARK: OXARewardedAdUnitDelegate
-
+    
 func rewardedAdDidReceiveAd(_ rewardedAd: OXARewardedAdUnit) {
     // Now the ad is ready for display
 }   
 ```
+
+
+
+
+
+
+
+
