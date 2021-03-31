@@ -1,5 +1,15 @@
 # OpenX iOS In-App Bidding SDK Release notes
 
+
+## Version 1.2.0
+
+March 31, 2021
+
+**Features**
+
+- Support Unified Native Ads for all integration kinds 
+- Open Measurement SDK support for native ads
+
 ## Version 1.1.0
 
 December 15, 2020
