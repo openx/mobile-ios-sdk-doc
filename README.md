@@ -1,15 +1,14 @@
 # OpenX Apollo iOS SDK
 
-The Apollo iOS SDK allows to integrate prebid solution hosted by OpenX into your apps to increase revenue of mobile advertising.
+Apollo SDK is a part of OpenX Apollo platform which implements an In-App Bidding approach and gives opportunities to buyers to compete on your inventory at parallel bidding auctions. 
 
-> **_NOTE:_**  The documentation for the legacy OpenX SDK is available [here](legacy_sdk/LEGACY_SDK_README.md).
-
-## Getting Started
-
-For requirements and integration overview, see [Getting Started](info/ios-in-app-bidding-getting-started.md).
-
-The current SDK version is **1.1.0**.
+The current SDK version is **1.2.0**.
 Go to [release notes](info/ios-in-app-bidding-release-notes.md) for all SDK versions.
+
+
+> **_NOTE:_**  The documentation for the legacy OpenX SDK is available [here](legacy-sdk/LEGACY_SDK_README.md).
+
+## Quick Start
 
 #### CocoaPods integration
 
@@ -33,13 +32,15 @@ pod 'openx-apollo-mopub-adapters'
 
 Also, you can download and integrate all needed components manually:
 
-- [Apollo SDK](http://sdk.prod.gcp.openx.org/apollo/ios/sdk/1.1.0/OpenX_Apollo_SDK_iOS_1.1.0.zip)
-- [GAM Event Handlers](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/GAM/1.1.0/OpenX_Apollo_GAMEventHandlers_iOS_1.1.0.zip)
-- [MoPub Adapters](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/MoPub/1.1.0/OpenX_Apollo_MoPub_Adapters_iOS_1.1.0.zip)
-- [Demo Application](http://sdk.prod.gcp.openx.org/apollo/ios/demo/1.1.0/OpenX_Apollo_DemoApp_iOS_1.1.0.zip)
+- [Apollo SDK](http://sdk.prod.gcp.openx.org/apollo/ios/sdk/1.2.0/OpenX_Apollo_SDK_iOS_1.2.0.zip)
+- [GAM Event Handlers](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/GAM/1.2.0/OpenX_Apollo_GAMEventHandlers_iOS_1.2.0.zip)
+- [MoPub Adapters](http://sdk.prod.gcp.openx.org/apollo/ios/event-handlers/MoPub/1.2.0/OpenX_Apollo_MoPub_Adapters_iOS_1.2.0.zip)
+- [Demo Application](http://sdk.prod.gcp.openx.org/apollo/ios/demo/1.2.0/OpenX_Apollo_DemoApp_iOS_1.2.0.zip)
 
 
-## In-App Bidding SDK Overview
+## Apollo SDK Overview
+
+For the overview of the In-App Bidding technology, see [Getting started with In-App Bidding](info/ios-in-app-bidding-getting-started.md).
 
 Here are key capabilities of the iOS In-App Bidding SDK:
 
@@ -73,4 +74,4 @@ Here are key capabilities of the iOS In-App Bidding SDK:
 
 ## Contact Us
 
-If you have any questions or need help, go to [OpenX Support](https://docs.openx.com/Content/support.html).
+If you have any questions or need help, go to [Apollo Support](https://www.openx.com/prebid/#form).

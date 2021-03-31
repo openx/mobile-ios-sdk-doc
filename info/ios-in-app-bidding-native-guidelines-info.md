@@ -1,6 +1,6 @@
 # Native Ads Guidelines
 
-Apollo SDK, starting from the version 1.1, supports Native Styles ads. The support of Unified Native Ads is scheduled for the next release.
+Apollo SDK, starting from the version 1.1, supports Native Styles ads, starting from the version 1.2, supports Unified Native Ads.
 
 ## Getting Started
 
